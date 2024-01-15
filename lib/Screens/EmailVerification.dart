@@ -55,7 +55,7 @@ class _EmailVerificationState extends State<EmailVerification> {
                     height: 80,
                   ),
                   Text(
-                    'Your Email Adress',
+                    'Your Email Address',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   const SizedBox(

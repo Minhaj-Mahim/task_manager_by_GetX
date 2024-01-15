@@ -27,7 +27,7 @@ class _ConfirmPasswordState extends State<ConfirmPassword> {
     var response =
         await _confirmPassController.setPassword(password, email, otp);
     if (response == true) {
-      Get.snackbar("Scccess", _confirmPassController.message,
+      Get.snackbar("Success", _confirmPassController.message,
           snackPosition: SnackPosition.BOTTOM);
       Get.offAll(const LogInScreen());
     } else {

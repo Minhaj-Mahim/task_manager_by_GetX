@@ -6,7 +6,7 @@ import 'package:task_manager_1/Widget/bodyBackground.dart';
 import '../Data/utility/Validator.dart';
 
 class RegScreen extends StatefulWidget {
-  RegScreen({super.key});
+  const RegScreen({super.key});
 
   @override
   State<RegScreen> createState() => _RegScreenState();

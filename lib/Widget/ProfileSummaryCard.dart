@@ -31,14 +31,18 @@ class _ProfileSummeryCardState extends State<ProfileSummeryCard> {
 
       return ListTile(
         shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(25),
-                bottomRight: Radius.circular(25))),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(25),
+            bottomRight: Radius.circular(25),
+          ),
+        ),
         onTap: () {
           if (widget.ignoreOnTap) {
-            Get.to(EditProfileScreen(
-              user: AuthController.user,
-            ));
+            Get.to(
+              EditProfileScreen(
+                user: AuthController.user,
+              ),
+            );
           }
         },
         tileColor: Colors.green,
@@ -56,7 +60,7 @@ class _ProfileSummeryCardState extends State<ProfileSummeryCard> {
                 ),
         ),
         title: Text(
-          fullname,
+          fullName,
           style: const TextStyle(
               color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
         ),
@@ -66,7 +70,7 @@ class _ProfileSummeryCardState extends State<ProfileSummeryCard> {
         ),
         trailing: IconButton(
             onPressed: () {
-              showModalforLogout();
+              showModalForLogout();
             },
             icon: const Icon(
               Icons.logout,
@@ -76,11 +80,11 @@ class _ProfileSummeryCardState extends State<ProfileSummeryCard> {
     });
   }
 
-  String get fullname {
+  String get fullName {
     return '${AuthController.user?.firstName ?? ''} ${AuthController.user?.lastName ?? ''}';
   }
 
-  showModalforLogout() {
+  showModalForLogout() {
     Get.defaultDialog(
       title: 'Logout !!!',
       content: const Text('Are You want to Logout?'),

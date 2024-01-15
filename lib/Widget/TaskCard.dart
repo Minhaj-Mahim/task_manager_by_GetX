@@ -103,11 +103,11 @@ class _TaskCardState extends State<TaskCard> {
                       onPressed: () {
                         showUpdateStatusModal();
                       },
-                      icon: Icon(Icons.edit_note_outlined),
+                      icon: const Icon(Icons.edit_note_outlined),
                     ),
                     IconButton(
                         onPressed: () {
-                          ShowModalforDelete();
+                          ShowModalForDelete();
                         },
                         icon: const Icon(
                           CupertinoIcons.delete,
@@ -123,7 +123,7 @@ class _TaskCardState extends State<TaskCard> {
     );
   }
 
-  void ShowModalforDelete() {
+  void ShowModalForDelete() {
     showDialog(
       context: context,
       builder: (context) {

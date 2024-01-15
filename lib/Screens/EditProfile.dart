@@ -59,7 +59,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
 
       Get.back();
 
-      Get.snackbar("Update Succesful", "Profile Updated",
+      Get.snackbar("Update Successful", "Profile Updated",
           snackPosition: SnackPosition.BOTTOM);
     } else {
       Get.snackbar('Error', '',

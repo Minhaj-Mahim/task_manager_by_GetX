@@ -62,7 +62,7 @@ class _AddNewTaskState extends State<AddNewTask> {
                             controller: _descriptionTEController,
                             validator: (String? value) {
                               if (value!.isEmpty) {
-                                return ' Enter Discription';
+                                return ' Enter Description';
                               }
                               return null;
                             },

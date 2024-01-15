@@ -31,7 +31,7 @@ class SummaryCard extends StatelessWidget {
                 ),
                 Text(
                   title.toString(),
-                  style: TextStyle(fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
                 )
               ],
             ),

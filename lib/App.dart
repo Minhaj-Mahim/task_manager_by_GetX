@@ -17,7 +17,7 @@ import 'Controller/ProgressTaskController.dart';
 import 'Controller/authController.dart';
 
 class TaskManagerApp extends StatelessWidget {
-  TaskManagerApp({super.key});
+  const TaskManagerApp({super.key});
 
   static GlobalKey<NavigatorState> navigationKey = GlobalKey<NavigatorState>();
 
