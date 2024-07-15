@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:task_manager_1/Controller/BottomNavController.dart';
-import 'package:task_manager_1/Screens/TaskScreens/CenceledTaskScreen.dart';
+import 'package:task_manager_1/Screens/TaskScreens/CanceledTaskScreen.dart';
 import 'package:task_manager_1/Screens/TaskScreens/CompleteTask%20Screen.dart';
 import 'package:task_manager_1/Screens/TaskScreens/ProgressTaskScreen.dart';
 import 'NewTaskScreen.dart';
@@ -22,7 +22,7 @@ class _BottomBar_ScreenState extends State<BottomBar_Screen> {
     NewTaskScreen(),
     ProgressTaskScreen(),
     CompleteTaskScreen(),
-    CenceledTaskScreen(),
+    CanceledTaskScreen(),
   ];
 
   @override

@@ -6,14 +6,14 @@ import '../../Widget/ProfileSummaryCard.dart';
 import '../../Widget/TaskCard.dart';
 import '../../Widget/bodyBackground.dart';
 
-class CenceledTaskScreen extends StatefulWidget {
-  const CenceledTaskScreen({super.key});
+class CanceledTaskScreen extends StatefulWidget {
+  const CanceledTaskScreen({super.key});
 
   @override
-  State<CenceledTaskScreen> createState() => _CenceledTaskScreenState();
+  State<CanceledTaskScreen> createState() => _CanceledTaskScreenState();
 }
 
-class _CenceledTaskScreenState extends State<CenceledTaskScreen> {
+class _CanceledTaskScreenState extends State<CanceledTaskScreen> {
   TaskListModal taskListModal = TaskListModal();
   final CanceledTaskController _canceledTaskController =
       Get.find<CanceledTaskController>();
